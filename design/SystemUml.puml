@@ -1,0 +1,87 @@
+@startuml Email
+
+title Contact Maneger Apllication Classes
+skinparam class {
+BackgroundColor PaleGreen
+ArrowColor SeaGreen
+BorderColor SpringBlue
+BackgroundColor<<Email_t>> lightblue
+BorderColor<<Email_t>> lightblue
+BackgroundColor<<Address_t>> lightblue
+BorderColor<<Address_et>> white
+BackgroundColor<<Phone_t>> lightblue
+BorderColor<<Phone_t>> white
+BackgroundColor<<User_t>> Wheat
+BorderColor<<User_t>> white
+}
+class Email_t <<Email_t>>{
+    -Email -> string
+    -Type -. string
+    -description -> string
+    ---
+    +Email_t (string Email, string Type, string description)
+    +setEmail (string)->void
+    +setType (string)->void
+    +setDescription (string)->void 
+    +getEmail (void) ->string
+}
+
+class Address_t <<Address_t>>{
+    -Address -> string
+    -Type -. string
+    -description -> string
+    ---
+    +Address_t (string Address, string Type, string description)
+    +setAddress (string)->void
+    +setType (string)->void
+    +setDescription (string)->void 
+    +getAddress (void) ->string
+}
+
+class Phone_t <<Phone_t>>{
+    -PhoneNumber -> string
+    -Type -. string
+    -description -> string
+    ---
+    +Phone_t (string Address, string Type, string description)
+    +setPhoneNumber (string)->void
+    +setType (string)->void
+    +setDescription (string)->void 
+    +getPhoneNumber (void) ->string
+}
+
+class User_t <<User_t>>{
+    -int userId
+    -string first_name
+    -string last_name
+    -string city
+    -string country
+    -string gender
+    -string added_Time
+    ---
+    +Phone_t (string Address, string Type, string description)
+    +setPhoneNumber (string)->void
+    +setType (string)->void
+    +setDescription (string)->void 
+    +getPhoneNumber (void) ->string
+}
+
+class Contact_t{
+    -int Counts
+    ---
+    void AddUser(...);
+    void EditUser(...);
+    void DeleteUser(...);
+    int  CountUsers(void);
+    void SearchUserById(...);
+    void SearchUserByName(...);
+    void ShowAll(void);
+    void SaveToFile(std::string filename);
+    void LoadFromFile(std::string filename);
+}
+User_t *-- "0..*" Phone_t : Contains
+User_t *-- "0..*" Email_t : Contains
+User_t *-- "0..*" Address_t : Contains
+Contact_t *-- "0..*" User_t : Contains
+
+@enduml

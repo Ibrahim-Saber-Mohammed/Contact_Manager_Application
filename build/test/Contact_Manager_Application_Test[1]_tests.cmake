@@ -1,0 +1,1 @@
+set( Contact_Manager_Application_Test_TESTS)

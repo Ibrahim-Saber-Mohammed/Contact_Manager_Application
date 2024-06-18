@@ -1,0 +1,8 @@
+/home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build/CMakeFiles/edit_cache.dir
+/home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build/CMakeFiles/rebuild_cache.dir
+/home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build/test/CMakeFiles/Contact_Manager_Application_Test.dir
+/home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build/test/CMakeFiles/edit_cache.dir
+/home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build/test/CMakeFiles/rebuild_cache.dir
+/home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build/src/CMakeFiles/Contact_Manager_Application.dir
+/home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build/src/CMakeFiles/edit_cache.dir
+/home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build/src/CMakeFiles/rebuild_cache.dir

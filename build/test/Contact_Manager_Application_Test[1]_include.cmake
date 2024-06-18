@@ -1,0 +1,5 @@
+if(EXISTS "/home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build/test/Contact_Manager_Application_Test[1]_tests.cmake")
+  include("/home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build/test/Contact_Manager_Application_Test[1]_tests.cmake")
+else()
+  add_test(Contact_Manager_Application_Test_NOT_BUILT Contact_Manager_Application_Test_NOT_BUILT)
+endif()
