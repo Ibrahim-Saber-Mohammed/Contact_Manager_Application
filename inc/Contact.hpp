@@ -9,7 +9,7 @@
 class Contact
 {
 private:
-    std::vector<User_t> ContacstList{};
+    std::vector<User_t> ContacstList;
     int Counts;
 
 public:

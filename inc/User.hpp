@@ -9,16 +9,6 @@
 #include "Address.hpp"
 #include "Email.hpp"
 
-/**
- * // current date and time on the current system
-   time_t now = time(0);
-
-   // convert now to local time
-   struct tm *local_time = localtime(&now);
-
-   // convert local_time to string form
-   char* date_time = asctime(local_time);
- */
 class User_t
 {
 private:
