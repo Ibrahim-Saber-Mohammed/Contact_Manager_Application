@@ -1,10 +1,27 @@
 #include <Address.hpp>
+#include <exception>
 
-Address_t::Address_t(std::string place = "UNKOWN", std::string type = "UNKOWN", std::string description = "UNKOWN")
+Address_t::Address_t() : place("UNKNOWN"), type("UNKNOWN"), description("UNKNOWN") {}
+Address_t::Address_t(std::string place, std::string type, std::string description)
     : place{place}, type{type}, description{description} {}
 void Address_t::SetAddress(const std::string &Place)
 {
-    this->place = Place;
+    if (Place.empty())
+    {
+        try
+        {
+            throw "Invalid Argument";
+        }
+        catch (char *excp)
+        {
+            std::cout << "Caught " << excp;
+        }
+    }
+
+    else
+    {
+        this->place = Place;
+    }
 }
 void Address_t::SetType(const std::string &Type)
 {

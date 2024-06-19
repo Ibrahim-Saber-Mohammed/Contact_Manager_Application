@@ -5,7 +5,8 @@ project(Contact_Manager_Application_Test)
 include(GoogleTest)
 
 SET(SOURCE 
-    ${CMAKE_SOURCE_DIR}/test/Contact_Manager_Application_Test.cpp
+    ${CMAKE_SOURCE_DIR}/test/AddressClass_Test.cpp
+    ${CMAKE_SOURCE_DIR}/src/Address.cpp
 )
 
 add_executable(${PROJECT_NAME} 

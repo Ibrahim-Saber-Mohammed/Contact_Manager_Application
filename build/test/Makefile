@@ -130,29 +130,53 @@ Contact_Manager_Application_Test/fast:
 	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/Contact_Manager_Application_Test.dir/build.make test/CMakeFiles/Contact_Manager_Application_Test.dir/build
 .PHONY : Contact_Manager_Application_Test/fast
 
-Contact_Manager_Application_Test.o: Contact_Manager_Application_Test.cpp.o
-.PHONY : Contact_Manager_Application_Test.o
+AddressClass_Test.o: AddressClass_Test.cpp.o
+.PHONY : AddressClass_Test.o
 
 # target to build an object file
-Contact_Manager_Application_Test.cpp.o:
-	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/Contact_Manager_Application_Test.dir/build.make test/CMakeFiles/Contact_Manager_Application_Test.dir/Contact_Manager_Application_Test.cpp.o
-.PHONY : Contact_Manager_Application_Test.cpp.o
+AddressClass_Test.cpp.o:
+	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/Contact_Manager_Application_Test.dir/build.make test/CMakeFiles/Contact_Manager_Application_Test.dir/AddressClass_Test.cpp.o
+.PHONY : AddressClass_Test.cpp.o
 
-Contact_Manager_Application_Test.i: Contact_Manager_Application_Test.cpp.i
-.PHONY : Contact_Manager_Application_Test.i
+AddressClass_Test.i: AddressClass_Test.cpp.i
+.PHONY : AddressClass_Test.i
 
 # target to preprocess a source file
-Contact_Manager_Application_Test.cpp.i:
-	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/Contact_Manager_Application_Test.dir/build.make test/CMakeFiles/Contact_Manager_Application_Test.dir/Contact_Manager_Application_Test.cpp.i
-.PHONY : Contact_Manager_Application_Test.cpp.i
+AddressClass_Test.cpp.i:
+	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/Contact_Manager_Application_Test.dir/build.make test/CMakeFiles/Contact_Manager_Application_Test.dir/AddressClass_Test.cpp.i
+.PHONY : AddressClass_Test.cpp.i
 
-Contact_Manager_Application_Test.s: Contact_Manager_Application_Test.cpp.s
-.PHONY : Contact_Manager_Application_Test.s
+AddressClass_Test.s: AddressClass_Test.cpp.s
+.PHONY : AddressClass_Test.s
 
 # target to generate assembly for a file
-Contact_Manager_Application_Test.cpp.s:
-	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/Contact_Manager_Application_Test.dir/build.make test/CMakeFiles/Contact_Manager_Application_Test.dir/Contact_Manager_Application_Test.cpp.s
-.PHONY : Contact_Manager_Application_Test.cpp.s
+AddressClass_Test.cpp.s:
+	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/Contact_Manager_Application_Test.dir/build.make test/CMakeFiles/Contact_Manager_Application_Test.dir/AddressClass_Test.cpp.s
+.PHONY : AddressClass_Test.cpp.s
+
+__/src/Address.o: __/src/Address.cpp.o
+.PHONY : __/src/Address.o
+
+# target to build an object file
+__/src/Address.cpp.o:
+	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/Contact_Manager_Application_Test.dir/build.make test/CMakeFiles/Contact_Manager_Application_Test.dir/__/src/Address.cpp.o
+.PHONY : __/src/Address.cpp.o
+
+__/src/Address.i: __/src/Address.cpp.i
+.PHONY : __/src/Address.i
+
+# target to preprocess a source file
+__/src/Address.cpp.i:
+	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/Contact_Manager_Application_Test.dir/build.make test/CMakeFiles/Contact_Manager_Application_Test.dir/__/src/Address.cpp.i
+.PHONY : __/src/Address.cpp.i
+
+__/src/Address.s: __/src/Address.cpp.s
+.PHONY : __/src/Address.s
+
+# target to generate assembly for a file
+__/src/Address.cpp.s:
+	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/Contact_Manager_Application_Test.dir/build.make test/CMakeFiles/Contact_Manager_Application_Test.dir/__/src/Address.cpp.s
+.PHONY : __/src/Address.cpp.s
 
 # Help Target
 help:
@@ -163,9 +187,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Contact_Manager_Application_Test"
-	@echo "... Contact_Manager_Application_Test.o"
-	@echo "... Contact_Manager_Application_Test.i"
-	@echo "... Contact_Manager_Application_Test.s"
+	@echo "... AddressClass_Test.o"
+	@echo "... AddressClass_Test.i"
+	@echo "... AddressClass_Test.s"
+	@echo "... __/src/Address.o"
+	@echo "... __/src/Address.i"
+	@echo "... __/src/Address.s"
 .PHONY : help
 
 
