@@ -97,22 +97,54 @@ test/CMakeFiles/Contact_Manager_Application_Test.dir/__/src/Address.cpp.s: cmake
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Contact_Manager_Application_Test.dir/__/src/Address.cpp.s"
 	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/src/Address.cpp -o CMakeFiles/Contact_Manager_Application_Test.dir/__/src/Address.cpp.s
 
+test/CMakeFiles/Contact_Manager_Application_Test.dir/PhoneClass_Test.cpp.o: test/CMakeFiles/Contact_Manager_Application_Test.dir/flags.make
+test/CMakeFiles/Contact_Manager_Application_Test.dir/PhoneClass_Test.cpp.o: ../test/PhoneClass_Test.cpp
+test/CMakeFiles/Contact_Manager_Application_Test.dir/PhoneClass_Test.cpp.o: test/CMakeFiles/Contact_Manager_Application_Test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object test/CMakeFiles/Contact_Manager_Application_Test.dir/PhoneClass_Test.cpp.o"
+	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/Contact_Manager_Application_Test.dir/PhoneClass_Test.cpp.o -MF CMakeFiles/Contact_Manager_Application_Test.dir/PhoneClass_Test.cpp.o.d -o CMakeFiles/Contact_Manager_Application_Test.dir/PhoneClass_Test.cpp.o -c /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/test/PhoneClass_Test.cpp
+
+test/CMakeFiles/Contact_Manager_Application_Test.dir/PhoneClass_Test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Contact_Manager_Application_Test.dir/PhoneClass_Test.cpp.i"
+	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/test/PhoneClass_Test.cpp > CMakeFiles/Contact_Manager_Application_Test.dir/PhoneClass_Test.cpp.i
+
+test/CMakeFiles/Contact_Manager_Application_Test.dir/PhoneClass_Test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Contact_Manager_Application_Test.dir/PhoneClass_Test.cpp.s"
+	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/test/PhoneClass_Test.cpp -o CMakeFiles/Contact_Manager_Application_Test.dir/PhoneClass_Test.cpp.s
+
+test/CMakeFiles/Contact_Manager_Application_Test.dir/__/src/PhoneNumber.cpp.o: test/CMakeFiles/Contact_Manager_Application_Test.dir/flags.make
+test/CMakeFiles/Contact_Manager_Application_Test.dir/__/src/PhoneNumber.cpp.o: ../src/PhoneNumber.cpp
+test/CMakeFiles/Contact_Manager_Application_Test.dir/__/src/PhoneNumber.cpp.o: test/CMakeFiles/Contact_Manager_Application_Test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object test/CMakeFiles/Contact_Manager_Application_Test.dir/__/src/PhoneNumber.cpp.o"
+	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/Contact_Manager_Application_Test.dir/__/src/PhoneNumber.cpp.o -MF CMakeFiles/Contact_Manager_Application_Test.dir/__/src/PhoneNumber.cpp.o.d -o CMakeFiles/Contact_Manager_Application_Test.dir/__/src/PhoneNumber.cpp.o -c /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/src/PhoneNumber.cpp
+
+test/CMakeFiles/Contact_Manager_Application_Test.dir/__/src/PhoneNumber.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Contact_Manager_Application_Test.dir/__/src/PhoneNumber.cpp.i"
+	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/src/PhoneNumber.cpp > CMakeFiles/Contact_Manager_Application_Test.dir/__/src/PhoneNumber.cpp.i
+
+test/CMakeFiles/Contact_Manager_Application_Test.dir/__/src/PhoneNumber.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Contact_Manager_Application_Test.dir/__/src/PhoneNumber.cpp.s"
+	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/src/PhoneNumber.cpp -o CMakeFiles/Contact_Manager_Application_Test.dir/__/src/PhoneNumber.cpp.s
+
 # Object files for target Contact_Manager_Application_Test
 Contact_Manager_Application_Test_OBJECTS = \
 "CMakeFiles/Contact_Manager_Application_Test.dir/AddressClass_Test.cpp.o" \
-"CMakeFiles/Contact_Manager_Application_Test.dir/__/src/Address.cpp.o"
+"CMakeFiles/Contact_Manager_Application_Test.dir/__/src/Address.cpp.o" \
+"CMakeFiles/Contact_Manager_Application_Test.dir/PhoneClass_Test.cpp.o" \
+"CMakeFiles/Contact_Manager_Application_Test.dir/__/src/PhoneNumber.cpp.o"
 
 # External object files for target Contact_Manager_Application_Test
 Contact_Manager_Application_Test_EXTERNAL_OBJECTS =
 
 test/Contact_Manager_Application_Test: test/CMakeFiles/Contact_Manager_Application_Test.dir/AddressClass_Test.cpp.o
 test/Contact_Manager_Application_Test: test/CMakeFiles/Contact_Manager_Application_Test.dir/__/src/Address.cpp.o
+test/Contact_Manager_Application_Test: test/CMakeFiles/Contact_Manager_Application_Test.dir/PhoneClass_Test.cpp.o
+test/Contact_Manager_Application_Test: test/CMakeFiles/Contact_Manager_Application_Test.dir/__/src/PhoneNumber.cpp.o
 test/Contact_Manager_Application_Test: test/CMakeFiles/Contact_Manager_Application_Test.dir/build.make
 test/Contact_Manager_Application_Test: /usr/local/lib/libgtest.a
 test/Contact_Manager_Application_Test: /usr/local/lib/libgtest_main.a
 test/Contact_Manager_Application_Test: /usr/local/lib/libgtest.a
 test/Contact_Manager_Application_Test: test/CMakeFiles/Contact_Manager_Application_Test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Contact_Manager_Application_Test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Contact_Manager_Application_Test"
 	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Contact_Manager_Application_Test.dir/link.txt --verbose=$(VERBOSE)
 	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build/test && /usr/bin/cmake -D TEST_TARGET=Contact_Manager_Application_Test -D TEST_EXECUTABLE=/home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build/test/Contact_Manager_Application_Test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build/test -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=Contact_Manager_Application_Test_TESTS -D CTEST_FILE=/home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build/test/Contact_Manager_Application_Test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /usr/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
 

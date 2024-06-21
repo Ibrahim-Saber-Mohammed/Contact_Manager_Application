@@ -114,12 +114,12 @@ test/clean: test/CMakeFiles/Contact_Manager_Application_Test.dir/clean
 test/CMakeFiles/Contact_Manager_Application_Test.dir/all:
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/Contact_Manager_Application_Test.dir/build.make test/CMakeFiles/Contact_Manager_Application_Test.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/Contact_Manager_Application_Test.dir/build.make test/CMakeFiles/Contact_Manager_Application_Test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build/CMakeFiles --progress-num=8,9,10 "Built target Contact_Manager_Application_Test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build/CMakeFiles --progress-num=8,9,10,11,12 "Built target Contact_Manager_Application_Test"
 .PHONY : test/CMakeFiles/Contact_Manager_Application_Test.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/Contact_Manager_Application_Test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/Contact_Manager_Application_Test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/Contact_Manager_Application_Test.dir/rule
