@@ -6,21 +6,20 @@ Address_t::Address_t(std::string place, std::string type, std::string descriptio
     : place{place}, type{type}, description{description} {}
 void Address_t::SetAddress(const std::string &Place)
 {
-    if (Place.empty())
+    try
     {
-        try
+        if (Place.empty())
         {
             throw "Invalid Argument";
         }
-        catch (char *excp)
+        else
         {
-            std::cout << "Caught " << excp;
+            this->place = Place;
         }
     }
-
-    else
+    catch (char *excp)
     {
-        this->place = Place;
+        std::cout << "Caught " << excp;
     }
 }
 void Address_t::SetType(const std::string &Type)
@@ -34,4 +33,12 @@ void Address_t::SetDescription(const std::string &Description)
 std::string Address_t::GetAddress(void)
 {
     return this->place;
+}
+std::istream &operator>>(std::istream InputStream, Address_t CopyAddressObj)
+{
+    
+}
+std::ostream &operator<<(std::ostream OutputStream, Address_t CopyAddressObj)
+{
+
 }

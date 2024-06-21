@@ -4,13 +4,15 @@
 #include <vector>
 #include <string>
 #include <ctime>
-
 #include "PhoneNumber.hpp"
 #include "Address.hpp"
 #include "Email.hpp"
 
 class User_t
 {
+    friend std::istream &operator>>(std::istream InputStream, User_t CopyUserObj);
+    friend std::ostream &operator<<(std::ostream OutputStream, User_t CopyUserObj);
+
 private:
     int userId;
     std::string first_name;
@@ -55,6 +57,5 @@ public:
     void SetGender(std::string gender);
     void SetUserId(int userId);
 };
-
 
 #endif

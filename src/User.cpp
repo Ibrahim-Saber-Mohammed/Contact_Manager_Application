@@ -1,8 +1,8 @@
 #include "User.hpp"
 
-User_t::User_t(int userId, std::string first_name, std::string last_name): userId(userId), first_name(first_name), last_name(last_name){ }
+User_t::User_t(int userId, std::string first_name, std::string last_name) : userId(userId), first_name(first_name), last_name(last_name) {}
 User_t::User_t(int userId, std::string first_name, std::string last_name, std::string city, std::string country, std::string gender)
-: userId(userId), first_name(first_name), last_name(last_name), city(city), country(country), gender(gender){ }
+    : userId(userId), first_name(first_name), last_name(last_name), city(city), country(country), gender(gender) {}
 void User_t::Search(int Copy_intUserId)
 {
 }
@@ -11,40 +11,49 @@ void User_t::Show(int Copy_userId)
 }
 void User_t::AddPhoneNumber(Phone_t phoneNumber)
 {
+    phones.push_back(phoneNumber);
 }
 void User_t::AddEmail(Email_t email)
 {
+    emails.push_back(email);
 }
 void User_t::AddAddress(Address_t address)
 {
+    addresses.push_back(address);
 }
-void User_t::DeletePhoneNumber(int phoneNumber)
+void User_t::DeletePhoneNumber(int phoneNumberId)
 {
+    phones.erase(phones.begin() + phoneNumberId);
 }
-void User_t::DeleteEmail(int email)
+void User_t::DeleteEmail(int emailId)
 {
+    emails.erase(emails.begin() + emailId);
 }
-void User_t::DeleteAddress(int address)
+void User_t::DeleteAddress(int addressId)
 {
+    addresses.erase(addresses.begin() + addressId);
 }
 void User_t::UpdatePhoneNumber(int phoneNumberId, Phone_t newPhoneNumber)
 {
+    phones[phoneNumberId] = newPhoneNumber;
 }
 void User_t::UpdateEmail(int emailId, Email_t newEmail)
 {
+    emails[emailId] = newEmail;
 }
 void User_t::UpdateAddress(int addressId, Address_t newAddress)
 {
+    addresses[addressId] = newAddress;
 }
 void User_t::SetAddedTime(void)
 {
-// current date and time on the current system
-   time_t now = time(0);
-   // convert now to local time
-   struct tm *local_time = localtime(&now);
-   // convert local_time to string form
-   char* date_time = asctime(local_time);
-   this->added_Time = date_time;
+    // current date and time on the current system
+    time_t now = time(0);
+    // convert now to local time
+    struct tm *local_time = localtime(&now);
+    // convert local_time to string form
+    char *date_time = asctime(local_time);
+    this->added_Time = date_time;
 }
 std::string User_t::GetAddedTime(void)
 {
@@ -109,4 +118,12 @@ void User_t::SetGender(std::string gender)
 void User_t::SetUserId(int userId)
 {
     this->userId = userId;
+}
+std::istream &operator>>(std::istream InputStream, User_t CopyUserObj)
+{
+
+}
+std::ostream &operator<<(std::ostream OutputStream, User_t CopyUserObj)
+{
+
 }

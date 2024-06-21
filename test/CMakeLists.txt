@@ -7,6 +7,8 @@ include(GoogleTest)
 SET(SOURCE 
     ${CMAKE_SOURCE_DIR}/test/AddressClass_Test.cpp
     ${CMAKE_SOURCE_DIR}/src/Address.cpp
+    ${CMAKE_SOURCE_DIR}/test/PhoneClass_Test.cpp
+    ${CMAKE_SOURCE_DIR}/src/PhoneNumber.cpp
 )
 
 add_executable(${PROJECT_NAME} 
