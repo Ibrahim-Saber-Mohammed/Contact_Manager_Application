@@ -18,8 +18,8 @@ public:
     void SetType(const std::string &Type);
     void SetDescription(const std::string &Description);
     std::string GetEmail(void);
-    friend std::istream &operator>>(std::istream InputStream, Email_t CopyEmailObj);
-    friend std::ostream &operator<<(std::ostream OutputStream, Email_t CopyEmailObj);
+    friend std::istream &operator>>(std::istream & InputStream, Email_t & CopyEmailObj);
+    friend std::ostream &operator<<(std::ostream & OutputStream, Email_t & CopyEmailObj);
 };
 
 #endif

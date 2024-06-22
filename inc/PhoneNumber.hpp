@@ -18,8 +18,8 @@ public:
     void SetType(const std::string &Type);
     void SetDescription(const std::string &Description);
     std::string GetPhoneNumber(void);
-    friend std::istream &operator>>(std::istream InputStream, Phone_t CopyPhoneObj);
-    friend std::ostream &operator<<(std::ostream OutputStream, Phone_t CopyPhoneObj);
+    friend std::istream &operator>>(std::istream & InputStream, Phone_t & CopyPhoneObj);
+    friend std::ostream &operator<<(std::ostream & OutputStream, Phone_t & CopyPhoneObj);
 };
 
 #endif

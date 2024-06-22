@@ -119,11 +119,46 @@ void User_t::SetUserId(int userId)
 {
     this->userId = userId;
 }
-std::istream &operator>>(std::istream InputStream, User_t CopyUserObj)
+void User_t::PrintUserPhones(void)
 {
-
+    for (int iter = 0; iter < phones.size(); iter++)
+    {
+        std::cout <<phones[iter];
+    }
 }
-std::ostream &operator<<(std::ostream OutputStream, User_t CopyUserObj)
+void User_t::PrintUserAddresses(void)
 {
-
+    for (int iter = 0; iter < addresses.size(); iter++)
+    {
+        std::cout <<addresses[iter];
+    }
+}
+void User_t::PrintUserEmails(void)
+{
+    for (int iter = 0; iter < emails.size(); iter++)
+    {
+        std::cout <<addresses[iter];
+    }
+}
+std::istream &operator>>(std::istream & InputStream, User_t & CopyUserObj)
+{
+    return InputStream;
+}
+std::ostream &operator<<(std::ostream & OutputStream, User_t & CopyUserObj)
+{
+    OutputStream << "User name: " << CopyUserObj.first_name << CopyUserObj.last_name << "\n";
+    OutputStream << "Gender: " << CopyUserObj.gender << "\n";
+    OutputStream << "Added Time: " << CopyUserObj.added_Time << "\n";
+    OutputStream << "City: " << CopyUserObj.city << "\n";
+    OutputStream << "Country: " << CopyUserObj.country << "\n";
+    OutputStream << "Phone Numbers: ";
+    CopyUserObj.PrintUserPhones();
+    OutputStream << "\n";
+    OutputStream << "Emails: ";
+    CopyUserObj.PrintUserEmails();
+    OutputStream << "\n";
+    OutputStream << "Addresses: ";
+    CopyUserObj.PrintUserAddresses();
+    OutputStream << "\n";
+    return OutputStream;
 }

@@ -1,6 +1,7 @@
 #ifndef USER_CLASS_HPP__
 #define USER_CLASS_HPP__
 
+#include <iostream>
 #include <vector>
 #include <string>
 #include <ctime>
@@ -10,8 +11,8 @@
 
 class User_t
 {
-    friend std::istream &operator>>(std::istream InputStream, User_t CopyUserObj);
-    friend std::ostream &operator<<(std::ostream OutputStream, User_t CopyUserObj);
+    friend std::istream &operator>>(std::istream & InputStream, User_t & CopyUserObj);
+    friend std::ostream &operator<<(std::ostream & OutputStream, User_t & CopyUserObj);
 
 private:
     int userId;
@@ -56,6 +57,9 @@ public:
     void SetCountry(std::string country);
     void SetGender(std::string gender);
     void SetUserId(int userId);
+    void PrintUserEmails(void);
+    void PrintUserAddresses(void);
+    void PrintUserPhones(void);
 };
 
 #endif

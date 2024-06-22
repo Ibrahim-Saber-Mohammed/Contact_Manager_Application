@@ -20,11 +20,20 @@ std::string Email_t::GetEmail(void)
 {
     return this->email;
 }
-std::istream &operator>>(std::istream InputStream, Email_t CopyEmailObj)
+std::istream &operator>>(std::istream & InputStream, Email_t & CopyEmailObj)
 {
-    
+    std::cout << "Enter User Email: ";
+    std::getline(std::cin, CopyEmailObj.email);
+    std::cout << "Enter Email Type: ";
+    std::getline(std::cin, CopyEmailObj.type);
+    std::cout << "Enter Email Description: ";
+    std::getline(std::cin, CopyEmailObj.description);
+    return InputStream;
 }
-std::ostream &operator<<(std::ostream OutputStream, Email_t CopyEmailObj)
+std::ostream &operator<<(std::ostream & OutputStream, Email_t & CopyEmailObj)
 {
-
+    OutputStream << "Email: " << CopyEmailObj.email << "\n";
+    OutputStream << "Type: " << CopyEmailObj.type << "\n";
+    OutputStream << "Description: " << CopyEmailObj.description << "\n";
+    return OutputStream;
 }
