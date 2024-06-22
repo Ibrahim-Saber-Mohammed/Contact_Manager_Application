@@ -1,5 +1,6 @@
 #include "User.hpp"
 
+User_t::User_t(){}
 User_t::User_t(int userId, std::string first_name, std::string last_name) : userId(userId), first_name(first_name), last_name(last_name) {}
 User_t::User_t(int userId, std::string first_name, std::string last_name, std::string city, std::string country, std::string gender)
     : userId(userId), first_name(first_name), last_name(last_name), city(city), country(country), gender(gender) {}

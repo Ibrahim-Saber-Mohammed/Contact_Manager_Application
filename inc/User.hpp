@@ -11,8 +11,8 @@
 
 class User_t
 {
-    friend std::istream &operator>>(std::istream & InputStream, User_t & CopyUserObj);
-    friend std::ostream &operator<<(std::ostream & OutputStream, User_t & CopyUserObj);
+    friend std::istream &operator>>(std::istream &InputStream, User_t &CopyUserObj);
+    friend std::ostream &operator<<(std::ostream &OutputStream, User_t &CopyUserObj);
 
 private:
     int userId;
@@ -27,6 +27,7 @@ private:
     std::vector<Address_t> addresses;
 
 public:
+    User_t();
     User_t(int userId, std::string first_name, std::string last_name);
     User_t(int userId, std::string first_name, std::string last_name, std::string city, std::string country, std::string gender);
     void Search(int Copy_intUserId);

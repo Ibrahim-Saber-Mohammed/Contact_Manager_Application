@@ -1,19 +1,20 @@
 #ifndef CONTACT_CLASS_HPP__
 #define CONTACT_CLASS_HPP__
-
+#include <iostream>
 #include <vector>
 #include <string>
-
 #include "User.hpp"
 
-class Contact
+class Contact_t
 {
 private:
-    std::vector<User_t> ContacstList;
-    int Counts;
+    std::vector<User_t> ContactsList;
+    int UserCounts;
 
 public:
-    void AddUser(const User_t &NewUser);
+    Contact_t();
+    ~Contact_t();
+    void AddUser(void);
     void EditUser(const User_t &NewUser);
     void DeleteUser(const User_t &NewUser);
     int CountUsers(void);
