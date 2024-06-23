@@ -9,7 +9,10 @@ class Contact_t
 {
 private:
     std::vector<User_t> ContactsList;
-    int UserCounts;
+    uint16_t UserCounts;
+    bool IsFoundUserId(const uint16_t Copy_UserId);
+    bool SearchUserById(auto Copy_FoundUser, User_t &Copy_User);
+    bool SearchUserByName(auto Copy_FoundUser, User_t &Copy_SearchUser);
 
 public:
     Contact_t();
@@ -18,8 +21,7 @@ public:
     void EditUser(const User_t &NewUser);
     void DeleteUser(const User_t &NewUser);
     int CountUsers(void);
-    void SearchUserById(const User_t &NewUser);
-    void SearchUserByName(const User_t &NewUser);
+    void SearchUser(const User_t &NewUser);
     void ShowAll(void);
     void SaveToFile(std::string filename);
     void LoadFromFile(std::string filename);

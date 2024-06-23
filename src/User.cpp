@@ -60,7 +60,7 @@ std::string User_t::GetAddedTime(void)
 {
     return this->added_Time;
 }
-int User_t::GetUserId(void)
+uint16_t User_t::GetUserId(void)
 {
     return this->userId;
 }

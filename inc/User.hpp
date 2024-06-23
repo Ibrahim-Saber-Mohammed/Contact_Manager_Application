@@ -43,7 +43,7 @@ public:
     void UpdateAddress(int addressId, Address_t newAddress);
     void SetAddedTime(void);
     std::string GetAddedTime(void);
-    int GetUserId(void);
+    uint16_t GetUserId(void);
     std::string GetFirstName(void);
     std::string GetLastName(void);
     std::string GetCity(void);
