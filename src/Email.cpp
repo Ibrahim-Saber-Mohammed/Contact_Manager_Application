@@ -1,6 +1,6 @@
 #include "Email.hpp"
 
-Email_t::Email_t():email("UNKOWN"), type("UNKOWN"), description("UNKOWN"){}
+Email_t::Email_t() : email("UNKOWN"), type("UNKOWN"), description("UNKOWN") {}
 Email_t::Email_t(std::string email, std::string type, std::string description)
     : email{email}, type{type}, description{description} {}
 
@@ -20,7 +20,7 @@ std::string Email_t::GetEmail(void)
 {
     return this->email;
 }
-std::istream &operator>>(std::istream & InputStream, Email_t & CopyEmailObj)
+std::istream &operator>>(std::istream &InputStream, Email_t &CopyEmailObj)
 {
     std::cout << "Enter User Email: ";
     std::getline(std::cin, CopyEmailObj.email);
@@ -30,7 +30,7 @@ std::istream &operator>>(std::istream & InputStream, Email_t & CopyEmailObj)
     std::getline(std::cin, CopyEmailObj.description);
     return InputStream;
 }
-std::ostream &operator<<(std::ostream & OutputStream, Email_t & CopyEmailObj)
+std::ostream &operator<<(std::ostream &OutputStream, Email_t &CopyEmailObj)
 {
     OutputStream << "Email: " << CopyEmailObj.email << "\n";
     OutputStream << "Type: " << CopyEmailObj.type << "\n";

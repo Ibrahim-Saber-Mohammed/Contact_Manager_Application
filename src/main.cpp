@@ -162,19 +162,15 @@ void CLI::delete_contact_menu()
     }
 }
 */
+// ---------------------------------------------------------------------------------
+#include <iostream>
+#include <string>
+#include "Contact.hpp"
+
 int main(int argc , char *argv[])
 {
-    /**
-     * Weird Integral types:
-     *  CPUs can not perform the arthimetic operations on less than 4 bytes integer values
-     *  Compilers are smart enough to perform the implicit casting "Conversion" so the processor can carry out the operation
-     *  The result will be 4 bytes
-     */
-    char x = 5;
-    unsigned short y = 10;
-    auto result = x +y;
-    std::cout<<"result = x + y = " << (x+y) << "\n" ;
-    std::cout << "Sizeof result = " << sizeof(result) << "\n"; // 4 bytes
-
+    Contact_t ContactList;
+    ContactList.AddUser();
+    ContactList.AddUser();
     return 0;
 }

@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/ibrahim/Desktop/Cpp/Contact_Manager_Application/test/GTEST_INCLUDE_DIRS -I/home/ibrahim/Desktop/Cpp/Contact_Manager_Application/inc -I/home/ibrahim/Desktop/Cpp/Contact_Manager_Application/src
 
-CXX_FLAGS = -std=gnu++17
+CXX_FLAGS = -std=gnu++20
 

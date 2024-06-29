@@ -397,7 +397,8 @@ src/CMakeFiles/Contact_Manager_Application.dir/Contact.cpp.o: ../src/Contact.cpp
   /usr/include/c++/11/ctime \
   ../inc/PhoneNumber.hpp \
   ../inc/Address.hpp \
-  ../inc/Email.hpp
+  ../inc/Email.hpp \
+  ../inc/User.hpp
 
 src/CMakeFiles/Contact_Manager_Application.dir/Email.cpp.o: ../src/Email.cpp \
   /usr/include/stdc-predef.h \
@@ -1181,7 +1182,18 @@ src/CMakeFiles/Contact_Manager_Application.dir/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/bits/basic_ios.tcc \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
-  /usr/include/c++/11/bits/istream.tcc
+  /usr/include/c++/11/bits/istream.tcc \
+  ../inc/Contact.hpp \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
+  ../inc/User.hpp \
+  /usr/include/c++/11/ctime \
+  ../inc/PhoneNumber.hpp \
+  ../inc/Address.hpp \
+  ../inc/Email.hpp
 
 
 ../src/main.cpp:

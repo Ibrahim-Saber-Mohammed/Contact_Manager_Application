@@ -1,5 +1,5 @@
 #include "Contact.hpp"
-
+#include "User.hpp"
 Contact_t::Contact_t()
 {
     // TODO: Implement the constructor to init the List and read from a file
@@ -53,7 +53,7 @@ void Contact_t::AddUser(void)
     auto L_TempFoundUserPosition = ContactsList.end();
     while (true)
     {
-        if (uint8_t UserChoice{0}; true == ReEnterAnotherUserFlag)
+        if (uint16_t UserChoice{0}; true == ReEnterAnotherUserFlag)
         {
             std::cout << " Please Provide the following Information \n";
             std::cin >> L_TempInputUserData;
@@ -61,6 +61,7 @@ void Contact_t::AddUser(void)
             if (false == SearchUserById(L_TempFoundUserPosition, L_TempInputUserData))
             {
                 ContactsList.push_back(L_TempInputUserData);
+                std::cout << " User Added Successfully \n";
                 this->UserCounts++;
                 break;
             }
@@ -74,7 +75,7 @@ void Contact_t::AddUser(void)
             std::cout << "User ID is already taken \n";
             std::cout << " 1- Enter another User ID \n";
             std::cout << " 2- Cancel \n";
-            // TODO: Check User Input
+            //REVIEW: Check User Input
             std::cin >> UserChoice;
             if (UserChoice == 1)
             {
@@ -82,10 +83,12 @@ void Contact_t::AddUser(void)
             }
             else if (UserChoice == 2)
             {
+                std::cout << "Closing the Adding User Functionality.\n";
                 break;
             }
             else
             {
+                std::cout << " Invalid Input \n";
                 ReEnterAnotherUserFlag = false;
             }
         }

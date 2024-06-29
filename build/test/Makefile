@@ -154,6 +154,30 @@ AddressClass_Test.cpp.s:
 	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/Contact_Manager_Application_Test.dir/build.make test/CMakeFiles/Contact_Manager_Application_Test.dir/AddressClass_Test.cpp.s
 .PHONY : AddressClass_Test.cpp.s
 
+ContactClass_Test.o: ContactClass_Test.cpp.o
+.PHONY : ContactClass_Test.o
+
+# target to build an object file
+ContactClass_Test.cpp.o:
+	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/Contact_Manager_Application_Test.dir/build.make test/CMakeFiles/Contact_Manager_Application_Test.dir/ContactClass_Test.cpp.o
+.PHONY : ContactClass_Test.cpp.o
+
+ContactClass_Test.i: ContactClass_Test.cpp.i
+.PHONY : ContactClass_Test.i
+
+# target to preprocess a source file
+ContactClass_Test.cpp.i:
+	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/Contact_Manager_Application_Test.dir/build.make test/CMakeFiles/Contact_Manager_Application_Test.dir/ContactClass_Test.cpp.i
+.PHONY : ContactClass_Test.cpp.i
+
+ContactClass_Test.s: ContactClass_Test.cpp.s
+.PHONY : ContactClass_Test.s
+
+# target to generate assembly for a file
+ContactClass_Test.cpp.s:
+	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/Contact_Manager_Application_Test.dir/build.make test/CMakeFiles/Contact_Manager_Application_Test.dir/ContactClass_Test.cpp.s
+.PHONY : ContactClass_Test.cpp.s
+
 PhoneClass_Test.o: PhoneClass_Test.cpp.o
 .PHONY : PhoneClass_Test.o
 
@@ -202,6 +226,54 @@ __/src/Address.cpp.s:
 	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/Contact_Manager_Application_Test.dir/build.make test/CMakeFiles/Contact_Manager_Application_Test.dir/__/src/Address.cpp.s
 .PHONY : __/src/Address.cpp.s
 
+__/src/Contact.o: __/src/Contact.cpp.o
+.PHONY : __/src/Contact.o
+
+# target to build an object file
+__/src/Contact.cpp.o:
+	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/Contact_Manager_Application_Test.dir/build.make test/CMakeFiles/Contact_Manager_Application_Test.dir/__/src/Contact.cpp.o
+.PHONY : __/src/Contact.cpp.o
+
+__/src/Contact.i: __/src/Contact.cpp.i
+.PHONY : __/src/Contact.i
+
+# target to preprocess a source file
+__/src/Contact.cpp.i:
+	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/Contact_Manager_Application_Test.dir/build.make test/CMakeFiles/Contact_Manager_Application_Test.dir/__/src/Contact.cpp.i
+.PHONY : __/src/Contact.cpp.i
+
+__/src/Contact.s: __/src/Contact.cpp.s
+.PHONY : __/src/Contact.s
+
+# target to generate assembly for a file
+__/src/Contact.cpp.s:
+	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/Contact_Manager_Application_Test.dir/build.make test/CMakeFiles/Contact_Manager_Application_Test.dir/__/src/Contact.cpp.s
+.PHONY : __/src/Contact.cpp.s
+
+__/src/Email.o: __/src/Email.cpp.o
+.PHONY : __/src/Email.o
+
+# target to build an object file
+__/src/Email.cpp.o:
+	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/Contact_Manager_Application_Test.dir/build.make test/CMakeFiles/Contact_Manager_Application_Test.dir/__/src/Email.cpp.o
+.PHONY : __/src/Email.cpp.o
+
+__/src/Email.i: __/src/Email.cpp.i
+.PHONY : __/src/Email.i
+
+# target to preprocess a source file
+__/src/Email.cpp.i:
+	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/Contact_Manager_Application_Test.dir/build.make test/CMakeFiles/Contact_Manager_Application_Test.dir/__/src/Email.cpp.i
+.PHONY : __/src/Email.cpp.i
+
+__/src/Email.s: __/src/Email.cpp.s
+.PHONY : __/src/Email.s
+
+# target to generate assembly for a file
+__/src/Email.cpp.s:
+	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/Contact_Manager_Application_Test.dir/build.make test/CMakeFiles/Contact_Manager_Application_Test.dir/__/src/Email.cpp.s
+.PHONY : __/src/Email.cpp.s
+
 __/src/PhoneNumber.o: __/src/PhoneNumber.cpp.o
 .PHONY : __/src/PhoneNumber.o
 
@@ -226,6 +298,30 @@ __/src/PhoneNumber.cpp.s:
 	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/Contact_Manager_Application_Test.dir/build.make test/CMakeFiles/Contact_Manager_Application_Test.dir/__/src/PhoneNumber.cpp.s
 .PHONY : __/src/PhoneNumber.cpp.s
 
+__/src/User.o: __/src/User.cpp.o
+.PHONY : __/src/User.o
+
+# target to build an object file
+__/src/User.cpp.o:
+	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/Contact_Manager_Application_Test.dir/build.make test/CMakeFiles/Contact_Manager_Application_Test.dir/__/src/User.cpp.o
+.PHONY : __/src/User.cpp.o
+
+__/src/User.i: __/src/User.cpp.i
+.PHONY : __/src/User.i
+
+# target to preprocess a source file
+__/src/User.cpp.i:
+	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/Contact_Manager_Application_Test.dir/build.make test/CMakeFiles/Contact_Manager_Application_Test.dir/__/src/User.cpp.i
+.PHONY : __/src/User.cpp.i
+
+__/src/User.s: __/src/User.cpp.s
+.PHONY : __/src/User.s
+
+# target to generate assembly for a file
+__/src/User.cpp.s:
+	cd /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/Contact_Manager_Application_Test.dir/build.make test/CMakeFiles/Contact_Manager_Application_Test.dir/__/src/User.cpp.s
+.PHONY : __/src/User.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -238,15 +334,27 @@ help:
 	@echo "... AddressClass_Test.o"
 	@echo "... AddressClass_Test.i"
 	@echo "... AddressClass_Test.s"
+	@echo "... ContactClass_Test.o"
+	@echo "... ContactClass_Test.i"
+	@echo "... ContactClass_Test.s"
 	@echo "... PhoneClass_Test.o"
 	@echo "... PhoneClass_Test.i"
 	@echo "... PhoneClass_Test.s"
 	@echo "... __/src/Address.o"
 	@echo "... __/src/Address.i"
 	@echo "... __/src/Address.s"
+	@echo "... __/src/Contact.o"
+	@echo "... __/src/Contact.i"
+	@echo "... __/src/Contact.s"
+	@echo "... __/src/Email.o"
+	@echo "... __/src/Email.i"
+	@echo "... __/src/Email.s"
 	@echo "... __/src/PhoneNumber.o"
 	@echo "... __/src/PhoneNumber.i"
 	@echo "... __/src/PhoneNumber.s"
+	@echo "... __/src/User.o"
+	@echo "... __/src/User.i"
+	@echo "... __/src/User.s"
 .PHONY : help
 
 

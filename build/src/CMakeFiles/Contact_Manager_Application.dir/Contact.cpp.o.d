@@ -166,4 +166,5 @@ src/CMakeFiles/Contact_Manager_Application.dir/Contact.cpp.o: \
  /usr/include/c++/11/ctime \
  /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/inc/PhoneNumber.hpp \
  /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/inc/Address.hpp \
- /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/inc/Email.hpp
+ /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/inc/Email.hpp \
+ /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/inc/User.hpp

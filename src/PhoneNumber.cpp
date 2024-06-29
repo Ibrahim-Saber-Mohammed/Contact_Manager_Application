@@ -34,17 +34,17 @@ std::string Phone_t::GetPhoneNumber(void)
 {
     return this->phoneNumber;
 }
-std::istream &operator>>(std::istream & InputStream, Phone_t & CopyPhoneObj)
+std::istream &operator>>(std::istream &InputStream, Phone_t &CopyPhoneObj)
 {
     std::cout << "Enter User Phone Number: ";
     std::getline(std::cin, CopyPhoneObj.phoneNumber);
-    std::cout << "Enter Email Type: ";
+    std::cout << "Enter Phone Type: ";
     std::getline(std::cin, CopyPhoneObj.type);
-    std::cout << "Enter Email Description: ";
+    std::cout << "Enter Phone Description: ";
     std::getline(std::cin, CopyPhoneObj.description);
     return InputStream;
 }
-std::ostream &operator<<(std::ostream & OutputStream, Phone_t & CopyPhoneObj)
+std::ostream &operator<<(std::ostream &OutputStream, Phone_t &CopyPhoneObj)
 {
     OutputStream << "Phone: " << CopyPhoneObj.phoneNumber << "\n";
     OutputStream << "Type: " << CopyPhoneObj.type << "\n";

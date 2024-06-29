@@ -1,7 +1,7 @@
-test/CMakeFiles/Contact_Manager_Application_Test.dir/__/src/PhoneNumber.cpp.o: \
- /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/src/PhoneNumber.cpp \
+test/CMakeFiles/Contact_Manager_Application_Test.dir/__/src/Email.cpp.o: \
+ /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/src/Email.cpp \
  /usr/include/stdc-predef.h \
- /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/inc/PhoneNumber.hpp \
+ /home/ibrahim/Desktop/Cpp/Contact_Manager_Application/inc/Email.hpp \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

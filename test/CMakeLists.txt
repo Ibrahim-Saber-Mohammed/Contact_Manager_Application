@@ -9,6 +9,10 @@ SET(SOURCE
     ${CMAKE_SOURCE_DIR}/src/Address.cpp
     ${CMAKE_SOURCE_DIR}/test/PhoneClass_Test.cpp
     ${CMAKE_SOURCE_DIR}/src/PhoneNumber.cpp
+    ${CMAKE_SOURCE_DIR}/test/ContactClass_Test.cpp
+    ${CMAKE_SOURCE_DIR}/src/Contact.cpp
+    ${CMAKE_SOURCE_DIR}/src/User.cpp
+    ${CMAKE_SOURCE_DIR}/src/Email.cpp
 )
 
 add_executable(${PROJECT_NAME} 

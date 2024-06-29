@@ -11,30 +11,26 @@
 
 class User_t
 {
-    friend std::istream &operator>>(std::istream &InputStream, User_t &CopyUserObj);
-    friend std::ostream &operator<<(std::ostream &OutputStream, User_t &CopyUserObj);
-
 private:
     int userId;
     std::string first_name;
     std::string last_name;
-    std::string city;
-    std::string country;
     std::string gender;
     std::string added_Time;
     std::vector<Phone_t> phones;
     std::vector<Email_t> emails;
     std::vector<Address_t> addresses;
-
+    friend std::istream &operator>>(std::istream &InputStream, User_t &CopyUserObj);
+    friend std::ostream &operator<<(std::ostream &OutputStream, User_t &CopyUserObj);
 public:
     User_t();
     User_t(int userId, std::string first_name, std::string last_name);
-    User_t(int userId, std::string first_name, std::string last_name, std::string city, std::string country, std::string gender);
+    User_t(int userId, std::string first_name, std::string last_name, std::string gender);
     void Search(int Copy_intUserId);
     void Show(int Copy_userId);
-    void AddPhoneNumber(Phone_t phoneNumber);
-    void AddEmail(Email_t email);
-    void AddAddress(Address_t address);
+    void AddPhoneNumber(void);
+    void AddEmail(void);
+    void AddAddress(void);
     void DeletePhoneNumber(int phoneNumber);
     void DeleteEmail(int email);
     void DeleteAddress(int address);
@@ -46,16 +42,12 @@ public:
     uint16_t GetUserId(void);
     std::string GetFirstName(void);
     std::string GetLastName(void);
-    std::string GetCity(void);
-    std::string GetCountry(void);
     std::string GetGender(void);
     std::vector<Phone_t> GetPhoneNumber(void);
     std::vector<Email_t> GetEmail(void);
     std::vector<Address_t> GetAddress(void);
     void SetFirstName(std::string first_name);
     void SetLastName(std::string last_name);
-    void SetCity(std::string city);
-    void SetCountry(std::string country);
     void SetGender(std::string gender);
     void SetUserId(int userId);
     void PrintUserEmails(void);
