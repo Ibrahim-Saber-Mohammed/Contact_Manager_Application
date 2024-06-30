@@ -12,7 +12,7 @@
 class User_t
 {
 private:
-    int userId;
+    uint16_t userId;
     std::string first_name;
     std::string last_name;
     std::string gender;

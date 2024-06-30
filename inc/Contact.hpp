@@ -11,8 +11,8 @@ private:
     std::vector<User_t> ContactsList;
     uint16_t UserCounts;
     bool IsFoundUserId(const uint16_t Copy_UserId);
-    bool SearchUserById(auto Copy_FoundUser, User_t &Copy_User);
-    bool SearchUserByName(auto Copy_FoundUser, User_t &Copy_SearchUser);
+    bool SearchUserById(auto Copy_FoundUser, uint16_t &Copy_User);
+    bool SearchUserByName(auto Copy_FoundUser, std::string &Copy_SearchUser);
 
 public:
     Contact_t();
