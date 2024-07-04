@@ -73,8 +73,7 @@ class Contact_t{
     void EditUser(...);
     void DeleteUser(...);
     int  CountUsers(void);
-    void SearchUserById(...);
-    void SearchUserByName(...);
+    void SearchUser();
     void ShowAll(void);
     void SaveToFile(std::string filename);
     void LoadFromFile(std::string filename);

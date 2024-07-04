@@ -45,7 +45,7 @@ bool Contact_t::SearchUserByName(auto Copy_FoundUser, std::string &Copy_SearchUs
     /* If the userId is not found then it is valid to be used */
     return false; /* User Id is not found*/
 }
-void Contact_t::SearchUser(const User_t &NewUser)
+void Contact_t::SearchUser(void)
 {
     uint16_t Option{};
     bool ReEnterAnotherOption{true};
@@ -156,13 +156,98 @@ void Contact_t::AddUser(void)
         }
     }
 }
-void Contact_t::EditUser(const User_t &NewUser)
+void Contact_t::EditUser(void)
 {
     // TODO: Take an option from the user represents the feild to be edited
+    uint16_t Option{};
+    bool ReEnterAnotherOption{true};
+    auto L_TempFoundUserPosition = ContactsList.end();
+    while (ReEnterAnotherOption)
+    {
+        std::cout << "Please Select one of the following Options \n";
+        std::cout << " 1- Search user by ID \n";
+        std::cout << " 2- Exit \n";
+        std::cin >> Option;
+        switch (Option)
+        {
+        case 1:
+        {
+            uint16_t SearchUserID{};
+            std::cout << "Please Enter the User ID to search for \n";
+            std::cin >> SearchUserID;
+            if (SearchUserById(L_TempFoundUserPosition, SearchUserID))
+            {
+                std::cout << "User has been Found...\n";
+                ReEnterAnotherOption = false;
+                //TODO: Implement the Editing Process
+            }
+            else
+            {
+                std::cout << "User has not been Found...\n";
+                ReEnterAnotherOption = true;
+            }
+        }
+        break;
+        case 3:
+        {
+            std::cout << "Thank you for using the program \n";
+            ReEnterAnotherOption = false;
+        }
+        break;
+        default:
+            ReEnterAnotherOption = true;
+            std::cout << "Inavlid Option....\n";
+            std::cout << "Please try again \n";
+            break;
+        }
+    }
 }
-void Contact_t::DeleteUser(const User_t &NewUser)
+void Contact_t::DeleteUser(void)
 {
     // TODO: Take an option from the user represents the user to be deleted
+        uint16_t Option{};
+    bool ReEnterAnotherOption{true};
+    auto L_TempFoundUserPosition = ContactsList.end();
+    while (ReEnterAnotherOption)
+    {
+        std::cout << "Please Select one of the following Options \n";
+        std::cout << " 1- Search user by ID \n";
+        std::cout << " 2- Exit \n";
+        std::cin >> Option;
+        switch (Option)
+        {
+        case 1:
+        {
+            uint16_t SearchUserID{};
+            std::cout << "Please Enter the User ID to search for \n";
+            std::cin >> SearchUserID;
+            if (SearchUserById(L_TempFoundUserPosition, SearchUserID))
+            {
+                std::cout << "User has been Found...\n";
+                ReEnterAnotherOption = false;
+                //TODO: Implement the removing Process
+            }
+            else
+            {
+                std::cout << "User has not been Found...\n";
+                ReEnterAnotherOption = true;
+            }
+        }
+        break;
+        case 3:
+        {
+            std::cout << "Thank you for using the program \n";
+            ReEnterAnotherOption = false;
+        }
+        break;
+        default:
+            ReEnterAnotherOption = true;
+            std::cout << "Inavlid Option....\n";
+            std::cout << "Please try again \n";
+            break;
+        }
+    }
+
 }
 int Contact_t::CountUsers(void)
 {

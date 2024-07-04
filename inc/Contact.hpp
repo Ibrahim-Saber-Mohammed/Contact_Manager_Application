@@ -18,10 +18,10 @@ public:
     Contact_t();
     ~Contact_t();
     void AddUser(void);
-    void EditUser(const User_t &NewUser);
-    void DeleteUser(const User_t &NewUser);
+    void EditUser(void);
+    void DeleteUser(void);
     int CountUsers(void);
-    void SearchUser(const User_t &NewUser);
+    void SearchUser(void);
     void ShowAll(void);
     void SaveToFile(std::string filename);
     void LoadFromFile(std::string filename);
