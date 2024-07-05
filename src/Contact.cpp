@@ -179,7 +179,7 @@ void Contact_t::EditUser(void)
             {
                 std::cout << "User has been Found...\n";
                 ReEnterAnotherOption = false;
-                //TODO: Implement the Editing Process
+                // TODO: Implement the Editing Process
             }
             else
             {
@@ -205,7 +205,7 @@ void Contact_t::EditUser(void)
 void Contact_t::DeleteUser(void)
 {
     // TODO: Take an option from the user represents the user to be deleted
-        uint16_t Option{};
+    uint16_t Option{};
     bool ReEnterAnotherOption{true};
     auto L_TempFoundUserPosition = ContactsList.end();
     while (ReEnterAnotherOption)
@@ -223,9 +223,10 @@ void Contact_t::DeleteUser(void)
             std::cin >> SearchUserID;
             if (SearchUserById(L_TempFoundUserPosition, SearchUserID))
             {
-                std::cout << "User has been Found...\n";
+                ContactsList.erase(L_TempFoundUserPosition);
                 ReEnterAnotherOption = false;
-                //TODO: Implement the removing Process
+                std::cout << " User Deleted Successfully \n";
+                // TODO: Implement the removing Process
             }
             else
             {
@@ -247,7 +248,6 @@ void Contact_t::DeleteUser(void)
             break;
         }
     }
-
 }
 int Contact_t::CountUsers(void)
 {
@@ -255,6 +255,12 @@ int Contact_t::CountUsers(void)
 }
 void Contact_t::ShowAll(void)
 {
+    std::cout << "===================================================================\n";
+    for (auto &User : ContactsList)
+    {
+        std::cout << User;
+    }
+    std::cout << "===================================================================\n";
 }
 void Contact_t::SaveToFile(std::string filename)
 {

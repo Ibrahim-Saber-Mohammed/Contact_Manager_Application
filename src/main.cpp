@@ -172,5 +172,6 @@ int main(int argc , char *argv[])
     Contact_t ContactList;
     ContactList.AddUser();
     ContactList.AddUser();
+    ContactList.ShowAll();
     return 0;
 }

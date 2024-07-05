@@ -32,8 +32,8 @@ std::istream &operator>>(std::istream &InputStream, Email_t &CopyEmailObj)
 }
 std::ostream &operator<<(std::ostream &OutputStream, Email_t &CopyEmailObj)
 {
-    OutputStream << "Email: " << CopyEmailObj.email << "\n";
-    OutputStream << "Type: " << CopyEmailObj.type << "\n";
-    OutputStream << "Description: " << CopyEmailObj.description << "\n";
+    OutputStream <<std::left<<std::setw(30)<< "Email: " << CopyEmailObj.email << "\n";
+    OutputStream <<std::left<<std::setw(30)<< "Type: " << CopyEmailObj.type << "\n";
+    OutputStream <<std::left<<std::setw(30)<< "Description: " << CopyEmailObj.description << "\n";
     return OutputStream;
 }

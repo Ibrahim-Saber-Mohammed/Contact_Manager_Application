@@ -46,8 +46,8 @@ std::istream &operator>>(std::istream &InputStream, Address_t &CopyAddressObj)
 }
 std::ostream &operator<<(std::ostream &OutputStream, Address_t &CopyAddressObj)
 {
-    OutputStream << "Place: " << CopyAddressObj.place << "\n";
-    OutputStream << "Type: " << CopyAddressObj.type << "\n";
-    OutputStream << "Description: " << CopyAddressObj.description << "\n";
+    OutputStream <<std::left<<std::setw(30)<< "Place: " << CopyAddressObj.place << "\n";
+    OutputStream <<std::left<<std::setw(30)<< "Type: " << CopyAddressObj.type << "\n";
+    OutputStream <<std::left<<std::setw(30)<< "Description: " << CopyAddressObj.description << "\n";
     return OutputStream;
 }

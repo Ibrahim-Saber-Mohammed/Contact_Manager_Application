@@ -114,21 +114,21 @@ void User_t::PrintUserPhones(void)
 {
     for (int iter = 0; iter < phones.size(); iter++)
     {
-        std::cout << phones[iter];
+        std::cout << std::setw(30) << phones[iter];
     }
 }
 void User_t::PrintUserAddresses(void)
 {
     for (int iter = 0; iter < addresses.size(); iter++)
     {
-        std::cout << addresses[iter];
+        std::cout << std::setw(30) << addresses[iter];
     }
 }
 void User_t::PrintUserEmails(void)
 {
     for (int iter = 0; iter < emails.size(); iter++)
     {
-        std::cout << addresses[iter];
+        std::cout << std::setw(30) << addresses[iter];
     }
 }
 std::istream &operator>>(std::istream &InputStream, User_t &CopyUserObj)
@@ -151,17 +151,11 @@ std::istream &operator>>(std::istream &InputStream, User_t &CopyUserObj)
 }
 std::ostream &operator<<(std::ostream &OutputStream, User_t &CopyUserObj)
 {
-    OutputStream << "User name: " << CopyUserObj.first_name << CopyUserObj.last_name << "\n";
-    OutputStream << "Gender: " << CopyUserObj.gender << "\n";
-    OutputStream << "Added Time: " << CopyUserObj.added_Time;
-    OutputStream << "Phone Numbers: ";
+    OutputStream <<std::left<<std::setw(30) << "User name: " << CopyUserObj.first_name << " " << CopyUserObj.last_name << "\n";
+    OutputStream <<std::left<<std::setw(30) << "Gender: " << CopyUserObj.gender << "\n";
+    OutputStream <<std::left<<std::setw(30) << "Added Time: " << CopyUserObj.added_Time;
     CopyUserObj.PrintUserPhones();
-    OutputStream << "\n";
-    OutputStream << "Emails: ";
     CopyUserObj.PrintUserEmails();
-    OutputStream << "\n";
-    OutputStream << "Addresses: ";
     CopyUserObj.PrintUserAddresses();
-    OutputStream << "\n";
     return OutputStream;
 }

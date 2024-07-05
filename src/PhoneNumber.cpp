@@ -46,8 +46,8 @@ std::istream &operator>>(std::istream &InputStream, Phone_t &CopyPhoneObj)
 }
 std::ostream &operator<<(std::ostream &OutputStream, Phone_t &CopyPhoneObj)
 {
-    OutputStream << "Phone: " << CopyPhoneObj.phoneNumber << "\n";
-    OutputStream << "Type: " << CopyPhoneObj.type << "\n";
-    OutputStream << "Description: " << CopyPhoneObj.description << "\n";
+    OutputStream <<std::left<<std::setw(30)<< "Phone: " << CopyPhoneObj.phoneNumber << "\n";
+    OutputStream <<std::left<<std::setw(30)<< "Type: " << CopyPhoneObj.type << "\n";
+    OutputStream <<std::left<<std::setw(30)<< "Description: " << CopyPhoneObj.description << "\n";
     return OutputStream;
 }

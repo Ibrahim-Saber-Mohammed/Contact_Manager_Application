@@ -8,7 +8,6 @@
 #include "PhoneNumber.hpp"
 #include "Address.hpp"
 #include "Email.hpp"
-
 class User_t
 {
 private:
